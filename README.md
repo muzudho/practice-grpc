@@ -62,3 +62,7 @@ docker-compose up -d node-server envoy commonjs-client
 
 同じエラー（＾～＾）  
 まず `third_party/protobuf` ディレクトリーに移動したいんだが、なぜ無いのか（＾～＾）？  
+
+[20210513shogi21a1.png](./doc/img/20210513shogi21a1.png)  
+
+👆 このディレクトリーが空なんだが、何か入れるのかだぜ（＾～＾）？  
