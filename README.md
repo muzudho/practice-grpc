@@ -59,3 +59,6 @@ code .
 
 docker-compose up -d node-server envoy commonjs-client
 ```
+
+同じエラー（＾～＾）  
+まず `third_party/protobuf` ディレクトリーに移動したいんだが、なぜ無いのか（＾～＾）？  
