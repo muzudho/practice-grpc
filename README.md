@@ -9,7 +9,7 @@ go mod init
 
 うーん、Dockerで環境作った方がいいのかだぜ（＾～＾）？  
 
-[gRPC - Quick start](https://grpc.io/docs/platforms/web/quickstart/)  
+[gRPC Web - Quick start](https://grpc.io/docs/platforms/web/quickstart/)  
 
 ```shell
 git clone https://github.com/grpc/grpc-web
@@ -28,3 +28,7 @@ docker-compose pull
 もしかして、Windowsにダウンロードしたときにテキストファイルの改行が `\r\n` になってしまって  
 DockerのLinuxにファイルを置いたときに `\r` が邪魔になったのかだぜ（＾～＾）？  
 `CRLF` を `LF` に変えたろ（＾～＾）  
+
+![20210512shogi20.png](./doc/img/20210512shogi20.png)  
+
+つら（＾～＾）  
