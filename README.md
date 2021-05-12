@@ -66,3 +66,24 @@ docker-compose up -d node-server envoy commonjs-client
 ![20210513shogi21a1.png](./doc/img/20210513shogi21a1.png)  
 
 👆 このディレクトリーが空なんだが、何か入れるのかだぜ（＾～＾）？  
+
+[grpc-web example don't work #1064](https://github.com/grpc/grpc-web/issues/1064)  
+
+```shell
+# ダメ（＾～＾）
+docker-compose build common prereqs
+
+# grpc-web ディレクトリで（＾～＾）
+git submodule init
+git submodule update
+# よっしゃ（＾～＾） third_party ディレクトリの中に何かがダウンロードされたぜ（＾～＾）
+
+# ダメ（＾～＾）
+docker-compose build common prereqs
+
+docker-compose up -d node-server envoy commonjs-client
+```
+
+![20210513shogi22.png](./doc/img/20210513shogi22.png)  
+
+👆 エラーの箇所が変わったので進んでいるのかも（＾～＾）  
