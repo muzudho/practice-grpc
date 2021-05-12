@@ -81,9 +81,36 @@ git submodule update
 # ダメ（＾～＾）
 docker-compose build common prereqs
 
+# ダメ（＾～＾）
 docker-compose up -d node-server envoy commonjs-client
 ```
 
 ![20210513shogi22.png](./doc/img/20210513shogi22.png)  
 
 👆 エラーの箇所が変わったので進んでいるのかも（＾～＾）  
+
+```shell
+# ダメ（＾～＾）
+docker-compose build interop-client closure-client node-interop-server echo-server binary-client protoc-plugin prereqs grpcwebproxy java-interop-server ts-client
+
+# ダメ（＾～＾）
+docker-compose up node-server envoy commonjs-client
+
+# やってみた（＾～＾）
+docker-compose pull node-server envoy commonjs-client
+
+# ダメ（＾～＾）
+docker-compose up node-server envoy commonjs-client
+
+# ダメ（＾～＾）
+docker-compose down
+docker-compose up
+
+# やってみた（＾～＾）
+docker-compose pull
+```
+
+![20210513shogi23.png](./doc/img/20210513shogi23.png)  
+
+👆 フーム（＾～＾）  
+
