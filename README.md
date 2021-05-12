@@ -114,3 +114,41 @@ docker-compose pull
 
 👆 フーム（＾～＾）  
 
+[How to run a makefile in Windows?](https://stackoverflow.com/questions/2532234/how-to-run-a-makefile-in-windows)  
+
+```shell
+# そんなことはできなかった（＾～＾）
+nmake -f Makefile
+```
+
+[GNU Make - Windows で make コマンドを使う](https://www.progresstype.com/2019/04/gnu-make.html)  
+
+[Make for Windows](http://gnuwin32.sourceforge.net/packages/make.htm)へアクセス。  
+
+`Complete package, except sources` の Setup をクリック。  
+ダウンロードした `make-3.81.exe` を実行。  
+
+環境変数のPathに `C:\Program Files (x86)\GnuWin32\bin` （インストール先のパス）を入れる。  
+
+Visual Studio Code のウィンドウを全部閉じて再起動（＾～＾）  
+
+```shell
+make -v
+GNU Make 3.81
+Copyright (C) 2006  Free Software Foundation, Inc.
+これはフリーソフトウェアです. 利用許諾についてはソースを 
+ご覧ください.
+商業性や特定の目的への適合性の如何に関わらず, 無保証です.
+
+This program built for i386-pc-mingw32
+```
+
+```shell
+make -f Makefile
+process_begin: CreateProcess(NULL, pwd, ...) failed.
+cd ""/net/grpc/gateway/examples/echo && make clean
+指定されたパスが見つかりません。
+make: *** [clean] エラー 1
+```
+
+👆 動かね（＾～＾）  
